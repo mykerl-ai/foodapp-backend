@@ -14,7 +14,7 @@ const jwt = require("jsonwebtoken");
 const typeDefs = require("./graphql/typeDefs");
 const resolvers = require("./graphql/resolvers");
 
-const MONGODB = "mongodb+srv://anoruemichael:193619@chow.keuzfbd.mongodb.net/";
+const MONGODB = process.env.MONGO_URI;
 
 const exemptedOperations = ["RegisterUser", "LoginUser", "IntrospectionQuery"];
 
